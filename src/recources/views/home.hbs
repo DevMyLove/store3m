@@ -1,0 +1,38 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+  {{#each products}}
+    <div class="card mx-3" style="width: 18rem;">
+      <a href="detail/{{this._id}}"><img
+          src="{{this.image.wallImage}}"
+          class="card-img-top"
+          alt="..."
+        /></a>
+      <div class="card-body">
+        <h5 class="card-title">{{this.price}}</h5>
+        <p class="card-text">Some quick example text to build on the card title
+          and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+<div class="m-3 col-6">
+  <form action="/product/create" method="POST">
+    <div class="mb-3">
+      <label for="category" class="form-label">Category</label>
+      <input type="text" class="form-control" id="category" name="category" />
+    </div>
+    <div class="mb-3">
+      <label for="gender" class="form-label">Gender</label>
+      <input type="text" class="form-control" id="gender" name="gender" />
+    </div>
+    <div class="mb-3">
+      <label for="style" class="form-label">Style</label>
+      <input type="text" class="form-control" id="style" name="style" />
+    </div>
+    <div class="mb-3">
+      <label for="publisher" class="form-label">Publisher</label>
+      <input type="text" class="form-control" id="publisher" name="publisher" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
