@@ -12,7 +12,11 @@ class SiteController{
         res.render('page404');
     }
     search(req,res,next){
+<<<<<<< HEAD
         res.send('my name Nguyen Duc Tam');
+=======
+        res.send('this is page search');
+>>>>>>> c2fa89b48ef40f1749d421124661cd1fbb13a14a
     }
 }
 module.exports = new SiteController;
