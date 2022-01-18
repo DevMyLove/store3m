@@ -9,7 +9,10 @@ class SiteController{
         .catch(next);
     }
     page404(req,res,next){
-        res.render('page404')
+        res.render('page404');
+    }
+    search(req,res,next){
+        res.render('page404');
     }
 }
 module.exports = new SiteController;
