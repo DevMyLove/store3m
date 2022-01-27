@@ -1,6 +1,6 @@
 # store3m
 
-echo "# a" >> README.md
+echo "# store3m" >> README.md
 
 git init
 
@@ -11,11 +11,11 @@ git commit -m "first commit"
 
 git branch -M main
 
-git remote add origin https://github.com/DevMyLove/a.git
+git remote add origin https://github.com/DevMyLove/store3m.git
 
 git push -u origin main
 
-git remote add origin https://github.com/DevMyLove/a.git
+git remote add origin https://github.com/DevMyLove/store3m.git
 
 git branch -M main
 
