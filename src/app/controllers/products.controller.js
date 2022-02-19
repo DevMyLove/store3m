@@ -3,12 +3,12 @@ const Product = require('../models/products')
 class ProductsController {
     // [GET] product
     index(req,res){
-        res.render('products');
+        res.render('products/products');
     }
 
     // [GET] product/shoes
     shoes(req,res){
-        res.render('products');
+        res.render('products/products');
     }
     
     create(req,res,next){

@@ -1,5 +1,5 @@
 const Product = require('../models/products');
-const mongooseObj = require('../../util/mongooseToObject');
+const mongooseObj = require('../../utils/mongooseToObject');
 
 class DetailProduct {
     // [GET] product
@@ -11,7 +11,7 @@ class DetailProduct {
                 res.redirect('/notFound');
             }  
             else{
-               res.render('detailProduct',{result : mongooseObj.mongooseToObj(result)});
+               res.render('products/detailProduct',{result : mongooseObj.mongooseToObj(result)});
             }
         })
 

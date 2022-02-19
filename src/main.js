@@ -2,8 +2,8 @@ const path = require('path');
 const express = require('express');
 const { engine } = require('express-handlebars');
 const app = express();
-const port = 3000;
 
+const {PORT} = require('./constants/index');
 const route = require('./routes/index');
 const db = require('./config/db/connect');
 
@@ -17,8 +17,17 @@ app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname,'./recources/views'));
 
 route(app);
-db.connectDB();
-    
-app.listen(port, () => {
-console.log(`Example app listening at http://localhost:${port}`);
-});
+
+const main = async() => {
+    try{
+        await db.connectDB();
+        app.listen(parseInt(PORT), () => {
+            console.log(`Example app listening at http://localhost:${PORT}`);
+        });
+    }
+    catch(err){
+        console.log(`Unable to start the server: \n${err.message}`);
+    }
+}
+
+main();

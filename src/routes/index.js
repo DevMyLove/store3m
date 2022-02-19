@@ -1,10 +1,13 @@
 const siteRouter = require('./site');
-const productRouter = require('./products')
+const authRouter = require('./auth.route');
+const userRouter = require('./user.route');
+const productRouter = require('./products');
 const detailProductRouter = require('./detailProduct');
 const { redirect } = require('express/lib/response');
 
 function route(app){
     
+    app.use('/user',userRouter);
     app.use('/men',productRouter);
     app.use('/women',productRouter);
     app.use('/product',productRouter)

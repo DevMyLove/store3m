@@ -1,36 +1,102 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" method="GET">
-        <input class="form-control me-2" name= "q" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<link rel="stylesheet" href="/assets/css/header.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+<div id="app-root">
+  <div class="pre-modal-window">
+    <div class="pre-modal">
+      <button id="pre-modal-btn-close"><i class="fas fa-times" style="font-size:32px;"></i></button>
+      <div class="login-view">
+        <div class="logo-login-view"><img src="https://www.maulogo.com/data/001/mau-logo-dong-vat-dep-01.jpg" alt="">
+        </div>
+        <div class="content-login">
+          YOUR ACCOUNT FOR EVERYTHING 3M
+        </div>
+        <div class="form-login ">
+          <form action="login" method="post" id="form-1">
+            <div class="text-input">
+              <input type="email" class="" name="username" placeholder="Email address">
+              <div class="form-message">Please enter a valid email address.</div>
+            </div>
+            <div class="text-input">
+              <input type="password" class="" name="password" placeholder="Password">
+              <div class="form-message">Please enter a password</div>
+            </div>
+            <div class="keep-login option-login ">
+              <input type="checkbox" name="keepMeLogin" id="284aaa79-114c-4a67-951b-12b785e3efb4">
+              <label for="284aaa79-114c-4a67-951b-12b785e3efb4">Keep me signed in</label>
+            </div>
+            <div class=" forgot-password option-login ">
+              <a href="#" id="345ca6f6-1b46-4bf5-8eb6-4ddbc6c8c136">Forgotten your password?</a>
+            </div>
+            <p class=" unite-login option-login">By logging in, you agree to 3M's <a href="#">Privacy Policy</a> and
+              Terms of Use.</p>
+            <div class="text-input btn-sign-in">
+              <input type="submit" id="13a63ee8-ed42-46fe-9bae-c4d310ae75be" value="SIGN IN">
+            </div>
+            <p class="unite-login option-login ">Not a Member? <a href="">Join Us.</a> </p>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
+  <div class="header-wrapper">
+    <div class="pre-brand-usermenu">
+      <div class="brand-menu logo">
+        <a href="#"><img src="https://www.maulogo.com/data/001/mau-logo-dong-vat-dep-01.jpg" alt=""></a>
+      </div>
+      <div class="usermenu">
+        <div class="optional-item"><a href="">Help</a></div>
+        <div class="optional-item"><a href="/user/register">Join Us</a></div>
+        <div class="optional-item"><button id="to-login-form">Login</button></div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" method="GET">
+              <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="/assets/js/validationLogin.js"></script>
+<script src="/assets/js/header.js"></script>

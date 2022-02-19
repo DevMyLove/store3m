@@ -1,9 +1,9 @@
 const Product = require('../models/products')
-const mongooseObj = require('../../util/mongooseToObject')
+const mongooseObj = require('../../utils/mongooseToObject')
 
 class SiteController{
     // [GET] home
-    home(req,res,next){
+    home(req,res,next){    
         Product.find({})
         .then(products => res.render('home', { products: mongooseObj.mutipleMongooseToObj(products)}))
         .catch(next);
